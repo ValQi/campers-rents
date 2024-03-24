@@ -38,9 +38,9 @@ const Favorites = ({ favorites }) => {
 
   const handleLikeClick = (camper) => {
     if (favorites.find(item => item._id === camper._id)) {
-      dispatch(removeFavorite(camper)); // Используем функцию удаления избранного из Redux
+      dispatch(removeFavorite(camper));
     } else {
-      dispatch(addFavorite(camper)); // Используем функцию добавления в избранное из Redux
+      dispatch(addFavorite(camper));
     }
   };
 

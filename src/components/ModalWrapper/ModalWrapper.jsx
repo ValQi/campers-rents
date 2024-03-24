@@ -58,7 +58,7 @@ const ModalWrapper = ({ isOpen, onRequestClose, camperInfo }) => {
         isOpen={isOpen}
         onRequestClose={onRequestClose}
         style={customStyles}
-        ariaHideApp={false} // Необходимо для предотвращения ошибки
+        ariaHideApp={false}
       >
         <ContentWrapper>
           <div>

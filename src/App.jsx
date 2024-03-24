@@ -9,6 +9,7 @@ const Catalog = lazy(() => import('./pages/catalog/Catalog'));
 const Features = lazy(() => import('./components/Features/Features'));
 const Reviews = lazy(() => import('./components/Reviews/Reviews'));
 const Favorites = lazy(() => import('./pages/Favorites/Favorites'));
+const HomePage = lazy(() => import('./pages/HomePage/HomaPage'));
 
 function App() {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
-        <Route index element={<h1>Home</h1>} />
+        <Route index element={<HomePage />} />
         <Route path="favorites" element={<Favorites favorites={favorites} />} />
         <Route path="catalog" element={<Catalog />} />
         <Route path="catalog/:camperId" element={<Catalog />}>
